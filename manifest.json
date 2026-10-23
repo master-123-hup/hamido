@@ -1,0 +1,25 @@
+{
+  "name": "حميدو للمحاسبة",
+  "short_name": "حميدو للمحاسبة",
+  "start_url": "/hamido-/index.html",
+  "scope": "/hamido-/",
+  "id": "/hamido-/",
+  "display": "standalone",
+  "background_color": "#0a1930",
+  "theme_color": "#0a1930",
+  "description": "برنامج محاسبة للمحلات - إعداد عمر عثمان حميدو",
+  "icons": [
+    {
+      "src": "/hamido-/icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/hamido-/icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
