@@ -1,4 +1,4 @@
-const CACHE_NAME = 'hamido-v1';
+const CACHE_NAME = 'hamido-v2';
 
 self.addEventListener('install', (event) => {
   self.skipWaiting();
@@ -9,5 +9,8 @@ self.addEventListener('activate', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
-  // الحدث الضروري ليعتبر المتصفح الموقع قابلاً للتثبيت
+  // حدث الفيتش ضروري جداً ليعمل التثبيت
+  event.respondWith(
+    fetch(event.request).catch(() => caches.match(event.request))
+  );
 });
